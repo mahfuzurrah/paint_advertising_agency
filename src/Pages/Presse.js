@@ -62,8 +62,7 @@ function Presse() {
           <div className="section_title">
             <p>DÉCOUVREZ...</p>
             <h2>
-              Specialized contemporary art magazines Publications dedicated to
-              emerging artists
+            Publications spécialisées sur l'art contemporain dédiées aux artistes émergents
             </h2>
           </div>
           <div className="discover_img_row grid_4">

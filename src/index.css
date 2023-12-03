@@ -160,7 +160,7 @@ section {
 }
 
 .container {
-  max-width: 1250px;
+  max-width: 1350px;
   margin: auto;
 }
 
@@ -172,11 +172,32 @@ section {
   color: var(--white-color);
 }
 
+.btn_sec {
+  padding: 10px 24px;
+  border-radius: 4px;
+  background: transparent;
+  border: 1px solid var(--white-color);
+  color: var(--white-color);
+}
+
 .btn:hover {
   background: transparent;
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
   transition: all 0.3s ease-in-out;
+}
+
+.btn_sec:hover {
+  background: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.btn_area {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 /*================ Common Css ================*/
@@ -227,11 +248,201 @@ section {
 /*================ HomePage Css ================*/
 .banner {
   width: 100%;
-  height: 120vh;
+  height: 80vh;
   background-image: url("./Components/assets/homeBanner.png");
+  background-repeat: no-repeat;
+  ;
+  background-size: cover;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-/*================  Page Css ================*/
+.banner_text {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner_text h1 {
+  margin-bottom: 30px;
+  color: var(--white-color);
+
+}
+
+.about_paintConnect .grid_2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.about_paintConnect .text_content {
+  max-width: 660px;
+  padding: 0 50px;
+}
+
+.about_paintConnect .text_content.left_text_content {
+  max-width: 660px;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 50px;
+}
+
+.about_paintConnect .text_content .ex-font {
+  font-size: 22px;
+}
+
+.about_paintConnect .video-player-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.about_paintConnect .video-player-container .play-pause-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  border: 5px solid #ffffff98;
+  border-radius: 100px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.play-pause-overlay.visible {
+  opacity: 1 !important;
+}
+
+.about_paintConnect .video-player-container .play-pause-overlay .icons {
+  color: var(--white-color);
+  font-size: 20px;
+}
+
+
+.discover_clients .text_content {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+
+.discover_clients .text_content h2,
+.discover_clients .text_content p {
+  color: var(--white-color);
+}
+
+
+.service .card {
+  border: 1px solid #ECECEC;
+  background: #F8F8F8;
+  text-align: center;
+  padding: 20px;
+}
+
+.service .card-body {
+  margin-top: 20px;
+}
+
+.service .card .service_img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin: auto;
+}
+
+.art_collection .content_area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.art_collection .swiper-slide {
+  width: 240px;
+  height: 430px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: width 0.3s ease;
+  position: relative;
+  align-items: flex-start;
+  justify-content: left
+}
+
+.art_collection .swiper-slide:hover {
+  width: 550px;
+  background: #000;
+}
+
+.art_collection .swiper-slide img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 240px;
+  height: 430px;
+  z-index: -1;
+}
+
+.art_collection .swiper-slide:hover img {
+  width: 550px !important;
+  object-fit: cover;
+}
+
+.art_collection .content_area .text_content {
+  /* display: none; */
+  width: 240px;
+  height: 430px;
+  padding: 30px;
+  background: #0000003b;
+}
+
+.art_collection .content_area .text_content {
+  display: none;
+  width: 240px;
+  height: 430px;
+  padding: 30px;
+  padding-top: 50px;
+  background: #0000003b;
+  opacity: 0;
+}
+
+.art_collection .swiper-slide:hover .text_content {
+  display: block;
+  width: 550px;
+  opacity: 1;
+}
+
+.art_collection .content_area .text_content h2,
+.art_collection .content_area .text_content p {
+  color: var(--white-color);
+  transition: all 0.5s ease-in;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*================ Services Page Css ================*/
 .service_banner {
   width: 100vw;
   height: 500px;
@@ -376,7 +587,7 @@ Responsive Css
     margin-right: 0;
   }
 
-  .service_banner .banner_text h1{
+  .service_banner .banner_text h1 {
     font-size: 7vw;
   }
 }
@@ -411,7 +622,7 @@ Responsive Css
     height: 100%;
   }
 
-  .service_banner .banner_text h1{
+  .service_banner .banner_text h1 {
     font-size: 36px;
   }
 }
