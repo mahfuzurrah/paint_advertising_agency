@@ -9,10 +9,14 @@ import HomeCarousel1 from "../Components/assets/carouselImg/HomeCarousel1.png";
 import HomeCarousel2 from "../Components/assets/carouselImg/HomeCarousel2.png";
 import HomeCarousel3 from "../Components/assets/carouselImg/HomeCarousel3.png";
 import paint_1 from "../Components/assets/carouselImg/paint_1.png";
+import paint_2 from "../Components/assets/carouselImg/paint_2.png";
+import paint_3 from "../Components/assets/carouselImg/paint_3.png";
 import serviceIcon_1 from "../Components/assets/icons/bulb.png";
 import serviceIcon_2 from "../Components/assets/icons/loveShake.png";
 import serviceIcon_3 from "../Components/assets/icons/userInfo.png";
 import pourquoiChoisirImg from "../Components/assets/pourquoiChoisir.jpeg";
+import faqImg from "../Components/assets/chez.png";
+import Faq from "../Components/FAQ/Faq";
 
 function Home() {
   return (
@@ -221,12 +225,183 @@ function Home() {
                 <img src={paint_1} alt="" />
                 <div className="text_content">
                   <h2>Lorem Ipsum is dolar sit</h2>
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, voluptatem.</p>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Ab, voluptatem.
+                  </p>
+                  <button className="btn mt-3">Voir l'œuvre</button>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="content_area">
+                <img src={paint_2} alt="" />
+                <div className="text_content">
+                  <h2>Lorem Ipsum is dolar sit</h2>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Ab, voluptatem.
+                  </p>
+                  <button className="btn mt-3">Voir l'œuvre</button>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="content_area">
+                <img src={paint_3} alt="" />
+                <div className="text_content">
+                  <h2>Lorem Ipsum is dolar sit</h2>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Ab, voluptatem.
+                  </p>
+                  <button className="btn mt-3">Voir l'œuvre</button>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="content_area">
+                <img src={paint_1} alt="" />
+                <div className="text_content">
+                  <h2>Lorem Ipsum is dolar sit</h2>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Ab, voluptatem.
+                  </p>
+                  <button className="btn mt-3">Voir l'œuvre</button>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="content_area">
+                <img src={paint_3} alt="" />
+                <div className="text_content">
+                  <h2>Lorem Ipsum is dolar sit</h2>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Ab, voluptatem.
+                  </p>
                   <button className="btn mt-3">Voir l'œuvre</button>
                 </div>
               </div>
             </SwiperSlide>
           </Swiper>
+        </div>
+      </section>
+      <section className="testimonials">
+        <div className="container">
+          <div className="section_title mb-5">
+            <p>testimonials</p>
+            <h2>Ce qu'ils disent de notre travail</h2>
+          </div>
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={30}
+            navigation={true}
+            pagination={true}
+            modules={[Navigation, Pagination]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <div className="ts_list">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Duis rhoncus eget sed
+                  consectetur erat lobortis viverra. Aliquam id convallis
+                  pellentesque id quis bibendum. Accumsan sit eget leo amet
+                  elementum vestibulum nisl. Accumsan id massa vel eu auctor
+                  massa scelerisque lectus. At elementum nunc cras hendrerit
+                  diam imperdiet. Curabitur lectus lacus ornare ornare morbi
+                  vitae integer nec.
+                </p>
+                <div className="user">
+                  <img src="" alt="" />
+                  <div className="name">
+                    <h3>Fiona </h3>
+                    <p className="title">Directeur artistique</p>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="ts_list">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Duis rhoncus eget sed
+                  consectetur erat lobortis viverra. Aliquam id convallis
+                  pellentesque id quis bibendum. Accumsan sit eget leo amet
+                  elementum vestibulum nisl. Accumsan id massa vel eu auctor
+                  massa scelerisque lectus. At elementum nunc cras hendrerit
+                  diam imperdiet. Curabitur lectus lacus ornare ornare morbi
+                  vitae integer nec.
+                </p>
+                <div className="user">
+                  <img src="" alt="" />
+                  <div className="name">
+                    <h3>Fiona </h3>
+                    <p className="title">Directeur artistique</p>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="ts_list">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Duis rhoncus eget sed
+                  consectetur erat lobortis viverra. Aliquam id convallis
+                  pellentesque id quis bibendum. Accumsan sit eget leo amet
+                  elementum vestibulum nisl. Accumsan id massa vel eu auctor
+                  massa scelerisque lectus. At elementum nunc cras hendrerit
+                  diam imperdiet. Curabitur lectus lacus ornare ornare morbi
+                  vitae integer nec.
+                </p>
+                <div className="user">
+                  <img src="" alt="" />
+                  <div className="name">
+                    <h3>Fiona </h3>
+                    <p className="title">Directeur artistique</p>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="ts_list">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Duis rhoncus eget sed
+                  consectetur erat lobortis viverra. Aliquam id convallis
+                  pellentesque id quis bibendum. Accumsan sit eget leo amet
+                  elementum vestibulum nisl. Accumsan id massa vel eu auctor
+                  massa scelerisque lectus. At elementum nunc cras hendrerit
+                  diam imperdiet. Curabitur lectus lacus ornare ornare morbi
+                  vitae integer nec.
+                </p>
+                <div className="user">
+                  <img src="" alt="" />
+                  <div className="name">
+                    <h3>Fiona </h3>
+                    <p className="title">Directeur artistique</p>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
+      </section>
+      <section className="faq">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6 col-md-6 col-sm-12">
+              <div className="card">
+                <img src={faqImg} alt="" />
+                <div className="text_area mt-1">
+                  <h3>VOUS AVEZ DES QUESTIONS ?</h3>
+                  <p>Startup Framework comprend d'excellentes options de formulaire pour vos projets de démarrage</p>
+                  <button className="btn mt-3">Obtenir de l'aide</button>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-6 col-md-6 col-sm-12">
+              <Faq/>
+            </div>
+          </div>
         </div>
       </section>
     </>

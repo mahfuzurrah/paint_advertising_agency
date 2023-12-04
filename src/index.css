@@ -251,7 +251,6 @@ section {
   height: 80vh;
   background-image: url("./Components/assets/homeBanner.png");
   background-repeat: no-repeat;
-  ;
   background-size: cover;
   object-fit: cover;
   display: flex;
@@ -272,7 +271,6 @@ section {
 .banner_text h1 {
   margin-bottom: 30px;
   color: var(--white-color);
-
 }
 
 .about_paintConnect .grid_2 {
@@ -330,23 +328,20 @@ section {
   font-size: 20px;
 }
 
-
 .discover_clients .text_content {
   text-align: center;
   width: 80%;
   margin: auto;
 }
 
-
 .discover_clients .text_content h2,
 .discover_clients .text_content p {
   color: var(--white-color);
 }
 
-
 .service .card {
-  border: 1px solid #ECECEC;
-  background: #F8F8F8;
+  border: 1px solid #ececec;
+  background: #f8f8f8;
   text-align: center;
   padding: 20px;
 }
@@ -376,7 +371,7 @@ section {
   transition: width 0.3s ease;
   position: relative;
   align-items: flex-start;
-  justify-content: left
+  justify-content: left;
 }
 
 .art_collection .swiper-slide:hover {
@@ -428,27 +423,15 @@ section {
   transition: all 0.5s ease-in;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*================ Services Page Css ================*/
 .service_banner {
   width: 100vw;
   height: 500px;
-  background-image: linear-gradient(to bottom,
+  background-image: linear-gradient(
+      to bottom,
       rgba(0, 0, 0, 0.3),
-      rgba(0, 0, 0, 0.3)),
+      rgba(0, 0, 0, 0.3)
+    ),
     url("./Components/assets/service_banner.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -464,9 +447,8 @@ section {
   font-size: var(--h1-font-size);
 }
 
-
 .discover {
-  background: #25282E;
+  background: #25282e;
 }
 
 .section_title h2 {
@@ -484,7 +466,7 @@ section {
 
 .discover_magazines h2,
 .discover_magazines p {
-  color: var(--white-color)
+  color: var(--white-color);
 }
 
 .discover_magazines p {
@@ -562,6 +544,74 @@ section {
   margin-right: 30px;
 }
 
+.testimonials {
+  background: #25282e;
+}
+
+.testimonials .ts_list {
+  width: 1050px;
+}
+
+.testimonials .user {
+  margin-top: 36px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonials .user img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+.testimonials .ts_list h3,
+.testimonials .ts_list p {
+  color: var(--white-color);
+}
+
+.faq .card {
+  padding: 30px;
+  background: #25282e;
+  border-radius: 12px;
+}
+
+.faq .card img {
+  border-radius: 12px;
+  margin-bottom: 30px;
+  height: 275px;
+  object-fit: cover;
+}
+
+.faq .card .text_area h3,
+.faq .card .text_area p {
+  color: var(--white-color);
+}
+
+.faq .card .text_area p {
+  margin-top: 20px;
+}
+
+.faq .faq-container .question {
+  margin-top: 20px;
+  padding: 10px 16px;
+  background: #ececec;
+  border-radius: 8px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.faq .faq-container .answer {
+  margin-top: 10px;
+  padding: 10px 12px;
+  font-size: 18px;
+}
+
 /*=========================== 
 Responsive Css 
 ===========================*/
@@ -608,8 +658,6 @@ Responsive Css
     height: 100%;
     object-fit: cover;
   }
-
-
 }
 
 @media (max-width: 678px) {
