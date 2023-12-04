@@ -404,6 +404,15 @@ function Home() {
           </div>
         </div>
       </section>
+      <section className="blog">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4 col-md-6 col-sm-12">
+              <div className="card"></div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
