@@ -1,22 +1,27 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Faq from "../Components/FAQ/Faq";
 import VideoPlayer from "../Components/VideoPlayer/VideoPlayer";
+import blog1 from "../Components/assets/blog1.png";
+import blog2 from "../Components/assets/blog2.png";
+import blog3 from "../Components/assets/blog3.png";
 import HomeCarousel1 from "../Components/assets/carouselImg/HomeCarousel1.png";
 import HomeCarousel2 from "../Components/assets/carouselImg/HomeCarousel2.png";
 import HomeCarousel3 from "../Components/assets/carouselImg/HomeCarousel3.png";
 import paint_1 from "../Components/assets/carouselImg/paint_1.png";
 import paint_2 from "../Components/assets/carouselImg/paint_2.png";
 import paint_3 from "../Components/assets/carouselImg/paint_3.png";
+import faqImg from "../Components/assets/chez.png";
 import serviceIcon_1 from "../Components/assets/icons/bulb.png";
 import serviceIcon_2 from "../Components/assets/icons/loveShake.png";
 import serviceIcon_3 from "../Components/assets/icons/userInfo.png";
 import pourquoiChoisirImg from "../Components/assets/pourquoiChoisir.jpeg";
-import faqImg from "../Components/assets/chez.png";
-import Faq from "../Components/FAQ/Faq";
+import sp_service from "../Components/assets/sp_service.png";
 
 function Home() {
   return (
@@ -66,7 +71,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="grid_2">
+        <div className="grid_2 reverse">
           <div className="grid_item">
             <div className="text_content left_text_content">
               <h2>
@@ -211,6 +216,12 @@ function Home() {
       </section>
       <section className="art_collection">
         <div className="container">
+          <div className="section_title">
+            <div className="title">
+              <h2>CATÉGORIE COLLECTION D'ART</h2>
+            </div>
+            
+          </div>
           <Swiper
             slidesPerView={"auto"}
             spaceBetween={30}
@@ -393,22 +404,109 @@ function Home() {
                 <img src={faqImg} alt="" />
                 <div className="text_area mt-1">
                   <h3>VOUS AVEZ DES QUESTIONS ?</h3>
-                  <p>Startup Framework comprend d'excellentes options de formulaire pour vos projets de démarrage</p>
+                  <p>
+                    Startup Framework comprend d'excellentes options de
+                    formulaire pour vos projets de démarrage
+                  </p>
                   <button className="btn mt-3">Obtenir de l'aide</button>
                 </div>
               </div>
             </div>
             <div className="col-lg-6 col-md-6 col-sm-12">
-              <Faq/>
+              <Faq />
             </div>
           </div>
         </div>
       </section>
       <section className="blog">
         <div className="container">
-          <div className="row">
+          <div className="section_title">
+            <h2>Dernières nouvelles du blog</h2>
+          </div>
+          <div className="row mt-5">
             <div className="col-lg-4 col-md-6 col-sm-12">
-              <div className="card"></div>
+              <div className="card">
+              <div className="blog_img">
+              <img src={blog1} alt="" />
+              </div>
+                <div className="card_text">
+                  <h4 className="date">Janvier 12, 2019</h4>
+                  <h3>Lorem Ipsum is dolar sit</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Duis rhoncus eget
+                    sed consectetur erat lobortis viverra. Accumsan sit eget leo
+                    amet elementum vestibulum nisl. Accumsan id massa vel eu
+                    auctor massa
+                  </p>
+                  <Link to="" className="blog_link">
+                    En savoir plus
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-12">
+              <div className="card">
+              <div className="blog_img">
+              <img src={blog2} alt="" />
+              </div>
+                <div className="card_text">
+                  <h4 className="date">Janvier 12, 2019</h4>
+                  <h3>Lorem Ipsum is dolar sit</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Duis rhoncus eget
+                    sed consectetur erat lobortis viverra. Accumsan sit eget leo
+                    amet elementum vestibulum nisl. Accumsan id massa vel eu
+                    auctor massa
+                  </p>
+                  <Link to="" className="blog_link">
+                    En savoir plus
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-12">
+              <div className="card">
+                <div className="blog_img">
+                <img src={blog3} alt="" />
+                </div>
+                <div className="card_text">
+                  <h4 className="date">Janvier 12, 2019</h4>
+                  <h3>Lorem Ipsum is dolar sit</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Duis rhoncus eget
+                    sed consectetur erat lobortis viverra. Accumsan sit eget leo
+                    amet elementum vestibulum nisl. Accumsan id massa vel eu
+                    auctor massa
+                  </p>
+                  <Link to="" className="blog_link">
+                    En savoir plus
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="sp_service">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6">
+            <div className="text left_text">
+            <div className="title">
+              <h2 className="mb-4">
+              Quels annonceurs peuvent bénéficier de nos services spécialisés ?
+              </h2>
+            </div>
+            <p className="mt-2">
+            Si vous cherchez à cibler un public passionné d’art et de peinture, notre agence de publicité est l’alliée indispensable pour promouvoir efficacement votre marque. Que vous soyez un fabricant de matériel artistique, un galeriste, un fournisseur d'art ou une marque émergente dans le secteur de la peinture, nos experts sauront élaborer un plan publicitaire sur mesure pour mettre en valeur vos produits et services. 
+            </p>
+            <p className="mt-3">
+            Nos solutions publicitaires stratégiques sont conçues pour maximiser l’impact de votre marque au sein de la communauté artistique, en mettant en valeur la qualité de nos services et la diversité des supports publicitaires que nous proposons. Découvrez les témoignages de nos clients et les succès de nos campagnes publicitaires au cours des dernières années, démontrant notre engagement à fournir des résultats exceptionnels à nos partenaires.
+            </p>
+          </div>
+            </div>
+            <div className="col-lg-6">
+              <img src={sp_service} alt="" />
             </div>
           </div>
         </div>

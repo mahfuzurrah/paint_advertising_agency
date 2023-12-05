@@ -612,13 +612,85 @@ section {
   font-size: 18px;
 }
 
+.blog .section_title h2 {
+  color: var(--title-color);
+}
+
+.blog .card {
+  background: transparent;
+  border: none;
+  overflow: hidden;
+}
+
+.blog .card img {
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+.blog .card .blog_img {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.blog .card:hover .blog_img img {
+  scale: 1.2;
+  transition: all 0.5s ease-in-out;
+}
+
+.blog .card .card_text {
+  width: calc(100% - 30px);
+  padding: 30px 20px;
+  margin-top: -30%;
+  background: var(--white-color);
+  z-index: 1;
+}
+
+.blog .card .card_text .date {
+  font-family: var(--ex-font);
+  font-size: var(--h4-font-size);
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.blog .card .card_text p {
+  margin: 20px 0;
+}
+
+.blog .card .card_text a {
+  font-size: var(--h4-font-size);
+  color: var(--title-color);
+  text-decoration: underline !important;
+}
+
+.blog .card:hover .card_text a {
+  color: var(--primary-color) !important;
+}
+
+.sp_service {
+  background: #25282e;
+}
+
+.sp_service img {
+  width: 100%;
+  height: 470px;
+  object-fit: cover;
+}
+
+.sp_service h2 {
+  color: var(--primary-color);
+}
+.sp_service p {
+  color: var(--white-color);
+}
+
 /*=========================== 
 Responsive Css 
 ===========================*/
 
 @media (max-width: 991px) {
   .reverse {
-    flex-direction: column-reverse;
+    flex-direction: column-reverse !important;
     margin-top: 30px;
   }
 
@@ -639,6 +711,33 @@ Responsive Css
 
   .service_banner .banner_text h1 {
     font-size: 7vw;
+  }
+
+  .about_paintConnect .grid_2 {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+
+  .about_paintConnect .grid_2.reverse {
+    flex-direction: column-reverse;
+  }
+
+  .about_paintConnect .grid_2.reverse .grid_item:last-child {
+    order: -1;
+  }
+  .about_paintConnect .text_content.left_text_content,
+  .about_paintConnect .text_content {
+    max-width: 100%;
+    padding: 0 20px !important;
+  }
+
+  .discover_clients .text_content {
+    width: 100%;
+  }
+
+  .service .row,
+  .blog .row {
+    row-gap: 25px;
   }
 }
 
