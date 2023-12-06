@@ -13,15 +13,14 @@ import blog3 from "../Components/assets/blog3.png";
 import HomeCarousel1 from "../Components/assets/carouselImg/HomeCarousel1.png";
 import HomeCarousel2 from "../Components/assets/carouselImg/HomeCarousel2.png";
 import HomeCarousel3 from "../Components/assets/carouselImg/HomeCarousel3.png";
-import paint_1 from "../Components/assets/carouselImg/paint_1.png";
-import paint_2 from "../Components/assets/carouselImg/paint_2.png";
-import paint_3 from "../Components/assets/carouselImg/paint_3.png";
 import faqImg from "../Components/assets/chez.png";
 import serviceIcon_1 from "../Components/assets/icons/bulb.png";
 import serviceIcon_2 from "../Components/assets/icons/loveShake.png";
 import serviceIcon_3 from "../Components/assets/icons/userInfo.png";
 import pourquoiChoisirImg from "../Components/assets/pourquoiChoisir.jpeg";
 import sp_service from "../Components/assets/sp_service.png";
+import TestimonialSlider from "../Components/Slider/TestimonialSlider";
+import ArtCollectionSlider from "../Components/Slider/ArtCollectionSlider";
 
 function Home() {
   return (
@@ -216,87 +215,10 @@ function Home() {
       </section>
       <section className="art_collection">
         <div className="container">
-          <div className="section_title">
-            <div className="title">
-              <h2>CATÉGORIE COLLECTION D'ART</h2>
-            </div>
-            
+          <div className="section_title mb-5">
+            <h2>CATÉGORIE COLLECTION D'ART</h2>
           </div>
-          <Swiper
-            slidesPerView={"auto"}
-            spaceBetween={30}
-            pagination={{
-              clickable: true,
-            }}
-            modules={[Pagination]}
-            className="mySwiper"
-          >
-            <SwiperSlide>
-              <div className="content_area">
-                <img src={paint_1} alt="" />
-                <div className="text_content">
-                  <h2>Lorem Ipsum is dolar sit</h2>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Ab, voluptatem.
-                  </p>
-                  <button className="btn mt-3">Voir l'œuvre</button>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="content_area">
-                <img src={paint_2} alt="" />
-                <div className="text_content">
-                  <h2>Lorem Ipsum is dolar sit</h2>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Ab, voluptatem.
-                  </p>
-                  <button className="btn mt-3">Voir l'œuvre</button>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="content_area">
-                <img src={paint_3} alt="" />
-                <div className="text_content">
-                  <h2>Lorem Ipsum is dolar sit</h2>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Ab, voluptatem.
-                  </p>
-                  <button className="btn mt-3">Voir l'œuvre</button>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="content_area">
-                <img src={paint_1} alt="" />
-                <div className="text_content">
-                  <h2>Lorem Ipsum is dolar sit</h2>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Ab, voluptatem.
-                  </p>
-                  <button className="btn mt-3">Voir l'œuvre</button>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="content_area">
-                <img src={paint_3} alt="" />
-                <div className="text_content">
-                  <h2>Lorem Ipsum is dolar sit</h2>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Ab, voluptatem.
-                  </p>
-                  <button className="btn mt-3">Voir l'œuvre</button>
-                </div>
-              </div>
-            </SwiperSlide>
-          </Swiper>
+          <ArtCollectionSlider/>
         </div>
       </section>
       <section className="testimonials">
@@ -305,95 +227,7 @@ function Home() {
             <p>testimonials</p>
             <h2>Ce qu'ils disent de notre travail</h2>
           </div>
-          <Swiper
-            slidesPerView={1}
-            spaceBetween={30}
-            navigation={true}
-            pagination={true}
-            modules={[Navigation, Pagination]}
-            className="mySwiper"
-          >
-            <SwiperSlide>
-              <div className="ts_list">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur. Duis rhoncus eget sed
-                  consectetur erat lobortis viverra. Aliquam id convallis
-                  pellentesque id quis bibendum. Accumsan sit eget leo amet
-                  elementum vestibulum nisl. Accumsan id massa vel eu auctor
-                  massa scelerisque lectus. At elementum nunc cras hendrerit
-                  diam imperdiet. Curabitur lectus lacus ornare ornare morbi
-                  vitae integer nec.
-                </p>
-                <div className="user">
-                  <img src="" alt="" />
-                  <div className="name">
-                    <h3>Fiona </h3>
-                    <p className="title">Directeur artistique</p>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="ts_list">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur. Duis rhoncus eget sed
-                  consectetur erat lobortis viverra. Aliquam id convallis
-                  pellentesque id quis bibendum. Accumsan sit eget leo amet
-                  elementum vestibulum nisl. Accumsan id massa vel eu auctor
-                  massa scelerisque lectus. At elementum nunc cras hendrerit
-                  diam imperdiet. Curabitur lectus lacus ornare ornare morbi
-                  vitae integer nec.
-                </p>
-                <div className="user">
-                  <img src="" alt="" />
-                  <div className="name">
-                    <h3>Fiona </h3>
-                    <p className="title">Directeur artistique</p>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="ts_list">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur. Duis rhoncus eget sed
-                  consectetur erat lobortis viverra. Aliquam id convallis
-                  pellentesque id quis bibendum. Accumsan sit eget leo amet
-                  elementum vestibulum nisl. Accumsan id massa vel eu auctor
-                  massa scelerisque lectus. At elementum nunc cras hendrerit
-                  diam imperdiet. Curabitur lectus lacus ornare ornare morbi
-                  vitae integer nec.
-                </p>
-                <div className="user">
-                  <img src="" alt="" />
-                  <div className="name">
-                    <h3>Fiona </h3>
-                    <p className="title">Directeur artistique</p>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="ts_list">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur. Duis rhoncus eget sed
-                  consectetur erat lobortis viverra. Aliquam id convallis
-                  pellentesque id quis bibendum. Accumsan sit eget leo amet
-                  elementum vestibulum nisl. Accumsan id massa vel eu auctor
-                  massa scelerisque lectus. At elementum nunc cras hendrerit
-                  diam imperdiet. Curabitur lectus lacus ornare ornare morbi
-                  vitae integer nec.
-                </p>
-                <div className="user">
-                  <img src="" alt="" />
-                  <div className="name">
-                    <h3>Fiona </h3>
-                    <p className="title">Directeur artistique</p>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-          </Swiper>
+          <TestimonialSlider/>
         </div>
       </section>
       <section className="faq">
@@ -426,29 +260,9 @@ function Home() {
           <div className="row mt-5">
             <div className="col-lg-4 col-md-6 col-sm-12">
               <div className="card">
-              <div className="blog_img">
-              <img src={blog1} alt="" />
-              </div>
-                <div className="card_text">
-                  <h4 className="date">Janvier 12, 2019</h4>
-                  <h3>Lorem Ipsum is dolar sit</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur. Duis rhoncus eget
-                    sed consectetur erat lobortis viverra. Accumsan sit eget leo
-                    amet elementum vestibulum nisl. Accumsan id massa vel eu
-                    auctor massa
-                  </p>
-                  <Link to="" className="blog_link">
-                    En savoir plus
-                  </Link>
+                <div className="blog_img">
+                  <img src={blog1} alt="" />
                 </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 col-sm-12">
-              <div className="card">
-              <div className="blog_img">
-              <img src={blog2} alt="" />
-              </div>
                 <div className="card_text">
                   <h4 className="date">Janvier 12, 2019</h4>
                   <h3>Lorem Ipsum is dolar sit</h3>
@@ -467,7 +281,27 @@ function Home() {
             <div className="col-lg-4 col-md-6 col-sm-12">
               <div className="card">
                 <div className="blog_img">
-                <img src={blog3} alt="" />
+                  <img src={blog2} alt="" />
+                </div>
+                <div className="card_text">
+                  <h4 className="date">Janvier 12, 2019</h4>
+                  <h3>Lorem Ipsum is dolar sit</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Duis rhoncus eget
+                    sed consectetur erat lobortis viverra. Accumsan sit eget leo
+                    amet elementum vestibulum nisl. Accumsan id massa vel eu
+                    auctor massa
+                  </p>
+                  <Link to="" className="blog_link">
+                    En savoir plus
+                  </Link>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-12">
+              <div className="card">
+                <div className="blog_img">
+                  <img src={blog3} alt="" />
                 </div>
                 <div className="card_text">
                   <h4 className="date">Janvier 12, 2019</h4>
@@ -491,19 +325,33 @@ function Home() {
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
-            <div className="text left_text">
-            <div className="title">
-              <h2 className="mb-4">
-              Quels annonceurs peuvent bénéficier de nos services spécialisés ?
-              </h2>
-            </div>
-            <p className="mt-2">
-            Si vous cherchez à cibler un public passionné d’art et de peinture, notre agence de publicité est l’alliée indispensable pour promouvoir efficacement votre marque. Que vous soyez un fabricant de matériel artistique, un galeriste, un fournisseur d'art ou une marque émergente dans le secteur de la peinture, nos experts sauront élaborer un plan publicitaire sur mesure pour mettre en valeur vos produits et services. 
-            </p>
-            <p className="mt-3">
-            Nos solutions publicitaires stratégiques sont conçues pour maximiser l’impact de votre marque au sein de la communauté artistique, en mettant en valeur la qualité de nos services et la diversité des supports publicitaires que nous proposons. Découvrez les témoignages de nos clients et les succès de nos campagnes publicitaires au cours des dernières années, démontrant notre engagement à fournir des résultats exceptionnels à nos partenaires.
-            </p>
-          </div>
+              <div className="text left_text">
+                <div className="title">
+                  <h2 className="mb-4">
+                    Quels annonceurs peuvent bénéficier de nos services
+                    spécialisés ?
+                  </h2>
+                </div>
+                <p className="mt-2">
+                  Si vous cherchez à cibler un public passionné d’art et de
+                  peinture, notre agence de publicité est l’alliée indispensable
+                  pour promouvoir efficacement votre marque. Que vous soyez un
+                  fabricant de matériel artistique, un galeriste, un fournisseur
+                  d'art ou une marque émergente dans le secteur de la peinture,
+                  nos experts sauront élaborer un plan publicitaire sur mesure
+                  pour mettre en valeur vos produits et services.
+                </p>
+                <p className="mt-3">
+                  Nos solutions publicitaires stratégiques sont conçues pour
+                  maximiser l’impact de votre marque au sein de la communauté
+                  artistique, en mettant en valeur la qualité de nos services et
+                  la diversité des supports publicitaires que nous proposons.
+                  Découvrez les témoignages de nos clients et les succès de nos
+                  campagnes publicitaires au cours des dernières années,
+                  démontrant notre engagement à fournir des résultats
+                  exceptionnels à nos partenaires.
+                </p>
+              </div>
             </div>
             <div className="col-lg-6">
               <img src={sp_service} alt="" />
