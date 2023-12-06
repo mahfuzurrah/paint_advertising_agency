@@ -44,7 +44,7 @@ function ArtInfluenceurs() {
                   N'hésitez pas à rejoindre PaintConnect, la Régie publicitaire
                   dédiée à propulser votre art vers de nouveaux sommets.
                 </p>
-                <button className="btn mt-4">Connect Now</button>
+                <button className="btn mt-4">Contactez-nous</button>
               </div>
             </div>
             <div className="col-lg-6 col-sm-12">

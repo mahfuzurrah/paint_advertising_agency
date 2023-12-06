@@ -7,11 +7,11 @@ import "./Navbar.css";
 function Navbar() {
   const menuItem = [
     {
-      name: "Home",
+      name: "Maison",
       url: "/",
     },
     {
-      name: "Services",
+      name: "Prestations de service",
       icon: <BiChevronDown className="icons" />,
       subMenu: [
         {
@@ -37,7 +37,7 @@ function Navbar() {
       url: "/about",
     },
     {
-      name: "Portfolio",
+      name: "Portefeuille",
       url: "/portfolio",
     },
     {

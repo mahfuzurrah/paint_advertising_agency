@@ -22,7 +22,7 @@ function Footer() {
             <h3>Liens rapides</h3>
             <ul className="mt-2">
               <li>
-                <Link to="">Home</Link>
+                <Link to="">Maison</Link>
               </li>
               <li>
                 <Link to="">À propos </Link>

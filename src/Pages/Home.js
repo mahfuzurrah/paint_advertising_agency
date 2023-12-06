@@ -51,21 +51,13 @@ function Home() {
             <div className="text_content">
               <p className="ex-font">Bienvenue sur PaintConnect</p>
               <h2>
-                PaintConnect est l'agence de publicité spécialisée dans la
-                peinture.
+              PaintConnect est l'agence de publicité spécialisée dans la peinture.
               </h2>
               <p className="mt-3">
-                Votre allié infaillible pour propulser votre présence dans le
-                monde captivant de la peinture. En tant qu'agence de publicité
-                et de communication passionnée, notre mission est de magnifier
-                la beauté et l'expression créative de l'art de la peinture.
+              Votre allié infaillible pour propulser votre présence dans le monde captivant de la peinture. En tant qu'agence de publicité et de communication passionnée, notre mission est de magnifier la beauté et l'expression créative de l'art de la peinture.
               </p>
               <p className="mt-3">
-                Notre étroite collaboration avec des artistes de renom, des
-                marques de peinture prestigieuses, des fournisseurs d'art de
-                premier plan et des publications spécialisées influentes
-                renforce notre expertise en matière de stratégies de
-                communication globales. ..... En savoir plus
+              Notre étroite collaboration avec des artistes de renom, des marques de peinture prestigieuses, des fournisseurs d'art de premier plan et des publications spécialisées influentes renforce notre expertise en matière de stratégies de communication globales. ..... En savoir plus
               </p>
             </div>
           </div>
@@ -78,21 +70,16 @@ function Home() {
                 agence de publicité spécialisée dans le domaine de la peinture ?
               </h2>
               <p className="mt-3">
-                Forte d'une vaste expérience dans le monde de la peinture, notre
-                agence bénéficie d'une expertise reconnue dans les supports
-                artistiques spécialisés. Nous travaillons en étroite
-                collaboration avec des acteurs majeurs du monde de l'art, vous
-                proposant ainsi une stratégie de communication complète adaptée
-                à vos besoins.
+              Forte d'une vaste expérience dans le monde de la peinture, notre agence bénéficie d'une expertise reconnue dans les supports artistiques spécialisés. Nous travaillons en étroite collaboration avec des acteurs majeurs du monde de l'art, vous proposant ainsi une stratégie de communication complète adaptée à vos besoins.
               </p>
               <p className="mt-3">
-                Faire appel à notre agence PaintConnect Advertising, c'est
-                l'assurance de vous faire bénéficier d'une équipe de
-                professionnels expérimentés et dédiés à la réussite de vos
-                campagnes publicitaires. Nous nous engageons à assurer une
-                visibilité optimale à vos produits ou services artistiques, en
-                vous fournissant une plateforme pour mettre en valeur votre
-                vision créative et capturer l’essence de votre travail.
+              Faire appel à notre agence PaintConnect Advertising, c'est
+              l'assurance de vous faire bénéficier d'une équipe de
+              professionnels expérimentés et dédiés à la réussite de vos
+              campagnes publicitaires. Nous nous engageons à assurer une
+              visibilité optimale à vos produits ou services artistiques, en
+              vous fournissant une plateforme pour mettre en valeur votre
+              vision créative et capturer l’essence de votre travail.
               </p>
             </div>
           </div>
