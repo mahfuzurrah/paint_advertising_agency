@@ -19,8 +19,8 @@ function Navbar() {
           url: "/presse",
         },
         {
-          name: "Sites Web 1",
-          url: "/sites-web-1",
+          name: "Sites Web",
+          url: "/sites-web",
         },
         {
           name: "Événements Artistiques",
