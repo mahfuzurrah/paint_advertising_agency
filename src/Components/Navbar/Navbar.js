@@ -36,14 +36,14 @@ function Navbar() {
       name: "À propos",
       url: "/about",
     },
-    {
-      name: "Portefeuille",
-      url: "/portfolio",
-    },
-    {
-      name: "Blog",
-      url: "/blog",
-    },
+    // {
+    //   name: "Portefeuille",
+    //   url: "/portfolio",
+    // },
+    // {
+    //   name: "Blog",
+    //   url: "/blog",
+    // },
   ];
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
