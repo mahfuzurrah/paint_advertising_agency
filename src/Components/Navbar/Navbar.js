@@ -43,7 +43,8 @@ function Navbar() {
     // {
     //   name: "Blog",
     //   url: "/blog",
-    // },
+    // },  
+    
   ];
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
