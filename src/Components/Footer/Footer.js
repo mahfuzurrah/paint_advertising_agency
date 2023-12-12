@@ -1,7 +1,12 @@
 import React from "react";
+import {
+  BiLogoFacebook,
+  BiLogoInstagram,
+  BiLogoLinkedin,
+  BiLogoTwitter,
+} from "react-icons/bi";
 import { FaPhoneAlt } from "react-icons/fa";
 import { HiEnvelope } from "react-icons/hi2";
-import { BiLogoFacebook, BiLogoTwitter, BiLogoLinkedin, BiLogoInstagram } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import "./Footer.css";
 
@@ -22,7 +27,7 @@ function Footer() {
             <h3>Liens rapides</h3>
             <ul className="mt-2">
               <li>
-                <Link to="">Maison</Link>
+                <Link to="">Accueil</Link>
               </li>
               <li>
                 <Link to="">À propos </Link>
@@ -72,10 +77,18 @@ function Footer() {
               </li>
             </ul>
             <div className="social_media_list">
-              <Link to=""><BiLogoFacebook className="icons"/></Link>
-              <Link to=""><BiLogoTwitter className="icons"/></Link>
-              <Link to=""><BiLogoLinkedin className="icons"/></Link>
-              <Link to=""><BiLogoInstagram className="icons"/></Link>
+              <Link to="">
+                <BiLogoFacebook className="icons" />
+              </Link>
+              <Link to="">
+                <BiLogoTwitter className="icons" />
+              </Link>
+              <Link to="">
+                <BiLogoLinkedin className="icons" />
+              </Link>
+              <Link to="">
+                <BiLogoInstagram className="icons" />
+              </Link>
             </div>
           </div>
         </div>

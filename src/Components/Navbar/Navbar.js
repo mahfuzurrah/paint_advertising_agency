@@ -7,7 +7,7 @@ import "./Navbar.css";
 function Navbar() {
   const menuItem = [
     {
-      name: "Maison",
+      name: "Accueil",
       url: "/",
     },
     {
