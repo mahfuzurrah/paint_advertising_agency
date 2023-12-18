@@ -19,13 +19,8 @@ function TestimonialSlider() {
       <SwiperSlide>
         <div className="ts_list">
           <p>
-            Lorem ipsum dolor sit amet consectetur. Duis rhoncus eget sed
-            consectetur erat lobortis viverra. Aliquam id convallis
-            pellentesque id quis bibendum. Accumsan sit eget leo amet
-            elementum vestibulum nisl. Accumsan id massa vel eu auctor
-            massa scelerisque lectus. At elementum nunc cras hendrerit
-            diam imperdiet. Curabitur lectus lacus ornare ornare morbi
-            vitae integer nec.
+          Ce partenariat n'est pas simplement professionnel, il est marqué par une réelle collaboration. L'équipe de PaintConnect se distingue par son professionnalisme, sa réactivité et son souci constant du détail. Leur passion pour l'art et leur engagement envers l'excellence ont créé une dynamique positive qui transcende les simples relations professionnelles.
+          PaintConnect est bien plus qu'une agence publicitaire ; c'est un partenaire stratégique qui a contribué de manière significative à notre succès. Nous sommes impatients de poursuivre cette collaboration fructueuse et de continuer à repousser les limites de la créativité publicitaire dans le monde de l'art.
           </p>
           <div className="user">
             <img src="" alt="" />
@@ -39,13 +34,8 @@ function TestimonialSlider() {
       <SwiperSlide>
         <div className="ts_list">
           <p>
-            Lorem ipsum dolor sit amet consectetur. Duis rhoncus eget sed
-            consectetur erat lobortis viverra. Aliquam id convallis
-            pellentesque id quis bibendum. Accumsan sit eget leo amet
-            elementum vestibulum nisl. Accumsan id massa vel eu auctor
-            massa scelerisque lectus. At elementum nunc cras hendrerit
-            diam imperdiet. Curabitur lectus lacus ornare ornare morbi
-            vitae integer nec.
+          Ce partenariat n'est pas simplement professionnel, il est marqué par une réelle collaboration. L'équipe de PaintConnect se distingue par son professionnalisme, sa réactivité et son souci constant du détail. Leur passion pour l'art et leur engagement envers l'excellence ont créé une dynamique positive qui transcende les simples relations professionnelles.
+          PaintConnect est bien plus qu'une agence publicitaire ; c'est un partenaire stratégique qui a contribué de manière significative à notre succès. Nous sommes impatients de poursuivre cette collaboration fructueuse et de continuer à repousser les limites de la créativité publicitaire dans le monde de l'art.
           </p>
           <div className="user">
             <img src="" alt="" />
@@ -59,13 +49,8 @@ function TestimonialSlider() {
       <SwiperSlide>
         <div className="ts_list">
           <p>
-            Lorem ipsum dolor sit amet consectetur. Duis rhoncus eget sed
-            consectetur erat lobortis viverra. Aliquam id convallis
-            pellentesque id quis bibendum. Accumsan sit eget leo amet
-            elementum vestibulum nisl. Accumsan id massa vel eu auctor
-            massa scelerisque lectus. At elementum nunc cras hendrerit
-            diam imperdiet. Curabitur lectus lacus ornare ornare morbi
-            vitae integer nec.
+          Ce partenariat n'est pas simplement professionnel, il est marqué par une réelle collaboration. L'équipe de PaintConnect se distingue par son professionnalisme, sa réactivité et son souci constant du détail. Leur passion pour l'art et leur engagement envers l'excellence ont créé une dynamique positive qui transcende les simples relations professionnelles.
+          PaintConnect est bien plus qu'une agence publicitaire ; c'est un partenaire stratégique qui a contribué de manière significative à notre succès. Nous sommes impatients de poursuivre cette collaboration fructueuse et de continuer à repousser les limites de la créativité publicitaire dans le monde de l'art.
           </p>
           <div className="user">
             <img src="" alt="" />
@@ -79,13 +64,8 @@ function TestimonialSlider() {
       <SwiperSlide>
         <div className="ts_list">
           <p>
-            Lorem ipsum dolor sit amet consectetur. Duis rhoncus eget sed
-            consectetur erat lobortis viverra. Aliquam id convallis
-            pellentesque id quis bibendum. Accumsan sit eget leo amet
-            elementum vestibulum nisl. Accumsan id massa vel eu auctor
-            massa scelerisque lectus. At elementum nunc cras hendrerit
-            diam imperdiet. Curabitur lectus lacus ornare ornare morbi
-            vitae integer nec.
+          Ce partenariat n'est pas simplement professionnel, il est marqué par une réelle collaboration. L'équipe de PaintConnect se distingue par son professionnalisme, sa réactivité et son souci constant du détail. Leur passion pour l'art et leur engagement envers l'excellence ont créé une dynamique positive qui transcende les simples relations professionnelles.
+          PaintConnect est bien plus qu'une agence publicitaire ; c'est un partenaire stratégique qui a contribué de manière significative à notre succès. Nous sommes impatients de poursuivre cette collaboration fructueuse et de continuer à repousser les limites de la créativité publicitaire dans le monde de l'art.
           </p>
           <div className="user">
             <img src="" alt="" />

@@ -47,72 +47,33 @@ function ArtCollectionSlider() {
         <SwiperSlide>
           <div className="content_area">
             <img src={paint_1} alt="" />
-            <div className="text_content">
-              <h2>Lorem Ipsum is dolar sit</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab,
-                voluptatem.
-              </p>
-              <button className="btn mt-3">Voir l'œuvre</button>
-            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="content_area">
             <img src={paint_2} alt="" />
-            <div className="text_content">
-              <h2>Lorem Ipsum is dolar sit</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab,
-                voluptatem.
-              </p>
-              <button className="btn mt-3">Voir l'œuvre</button>
-            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="content_area">
             <img src={paint_3} alt="" />
-            <div className="text_content">
-              <h2>Lorem Ipsum is dolar sit</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab,
-                voluptatem.
-              </p>
-              <button className="btn mt-3">Voir l'œuvre</button>
-            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="content_area">
             <img src={paint_1} alt="" />
-            <div className="text_content">
-              <h2>Lorem Ipsum is dolar sit</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab,
-                voluptatem.
-              </p>
-              <button className="btn mt-3">Voir l'œuvre</button>
-            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="content_area">
             <img src={paint_2} alt="" />
-            <div className="text_content">
-              <h2>Lorem Ipsum is dolar sit</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab,
-                voluptatem.
-              </p>
-              <button className="btn mt-3">Voir l'œuvre</button>
-            </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
           <div className="content_area">
             <img src={paint_3} alt="" />
-            <div className="text_content">
+          {/*
+          <div className="text_content">
               <h2>Lorem Ipsum is dolar sit</h2>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab,
@@ -120,6 +81,7 @@ function ArtCollectionSlider() {
               </p>
               <button className="btn mt-3">Voir l'œuvre</button>
             </div>
+         */}
           </div>
         </SwiperSlide>
       </Swiper>

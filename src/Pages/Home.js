@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -7,9 +7,9 @@ import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Faq from "../Components/FAQ/Faq";
 import VideoPlayer from "../Components/VideoPlayer/VideoPlayer";
-import blog1 from "../Components/assets/blog1.png";
-import blog2 from "../Components/assets/blog2.png";
-import blog3 from "../Components/assets/blog3.png";
+// import blog1 from "../Components/assets/blog1.png";
+// import blog2 from "../Components/assets/blog2.png";
+// import blog3 from "../Components/assets/blog3.png";
 import HomeCarousel1 from "../Components/assets/carouselImg/HomeCarousel1.png";
 import HomeCarousel2 from "../Components/assets/carouselImg/HomeCarousel2.png";
 import HomeCarousel3 from "../Components/assets/carouselImg/HomeCarousel3.png";
@@ -33,10 +33,12 @@ function Home() {
               La Régie Publicitaire & Agence spécialisée dans l'art de la
               peinture
             </h1>
+             {/* 
             <div className="btn_area">
               <button className="btn">Commencer</button>
               <button className="btn_sec">Nos services</button>
             </div>
+            */}
           </div>
         </div>
       </section>
@@ -162,11 +164,9 @@ function Home() {
               <div className="card">
                 <img className="service_img" src={serviceIcon_1} alt="" />
                 <div className="card-body">
-                  <h3>Conception de campagne</h3>
+                  <h3>Renforcez votre image de marque</h3>
                   <p className="mt-2">
-                    Lorem ipsum dolor sit amet consectetur. Duis rhoncus eget
-                    sed consectetur erat lobortis viverra. Aliquam id convallis
-                    pellentesque id quis bibendum.
+                  Les consommateurs sont de plus en plus réceptifs aux valeurs promues par les entreprises. Une communication efficace vous donne les moyens d’augmenter votre rayonnement et de vous différencier positivement de vos concurrents.
                   </p>
                 </div>
               </div>
@@ -175,11 +175,9 @@ function Home() {
               <div className="card">
                 <img className="service_img" src={serviceIcon_2} alt="" />
                 <div className="card-body">
-                  <h3>Conception de campagne</h3>
+                  <h3>Attirez et fidélisez les talents</h3>
                   <p className="mt-2">
-                    Lorem ipsum dolor sit amet consectetur. Duis rhoncus eget
-                    sed consectetur erat lobortis viverra. Aliquam id convallis
-                    pellentesque id quis bibendum.
+                  Les employés apprécient les engagements de leur entreprise. Vous rehaussez votre attractivité auprès des talents actuels et futurs.
                   </p>
                 </div>
               </div>
@@ -188,11 +186,9 @@ function Home() {
               <div className="card">
                 <img className="service_img" src={serviceIcon_3} alt="" />
                 <div className="card-body">
-                  <h3>Conception de campagne</h3>
+                  <h3>Promouvez l'innovation</h3>
                   <p className="mt-2">
-                    Lorem ipsum dolor sit amet consectetur. Duis rhoncus eget
-                    sed consectetur erat lobortis viverra. Aliquam id convallis
-                    pellentesque id quis bibendum.
+                  En infusant votre stratégie de communication, vous stimulez l’émergence d’idées neuves et de solutions innovantes.
                   </p>
                 </div>
               </div>
@@ -239,75 +235,9 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="blog">
-        <div className="container">
-          <div className="section_title">
-            <h2>Dernières nouvelles du blog</h2>
-          </div>
-          <div className="row mt-5">
-            <div className="col-lg-4 col-md-6 col-sm-12">
-              <div className="card">
-                <div className="blog_img">
-                  <img src={blog1} alt="" />
-                </div>
-                <div className="card_text">
-                  <h4 className="date">Janvier 12, 2019</h4>
-                  <h3>Lorem Ipsum is dolar sit</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur. Duis rhoncus eget
-                    sed consectetur erat lobortis viverra. Accumsan sit eget leo
-                    amet elementum vestibulum nisl. Accumsan id massa vel eu
-                    auctor massa
-                  </p>
-                  <Link to="" className="blog_link">
-                    En savoir plus
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 col-sm-12">
-              <div className="card">
-                <div className="blog_img">
-                  <img src={blog2} alt="" />
-                </div>
-                <div className="card_text">
-                  <h4 className="date">Janvier 12, 2019</h4>
-                  <h3>Lorem Ipsum is dolar sit</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur. Duis rhoncus eget
-                    sed consectetur erat lobortis viverra. Accumsan sit eget leo
-                    amet elementum vestibulum nisl. Accumsan id massa vel eu
-                    auctor massa
-                  </p>
-                  <Link to="" className="blog_link">
-                    En savoir plus
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 col-sm-12">
-              <div className="card">
-                <div className="blog_img">
-                  <img src={blog3} alt="" />
-                </div>
-                <div className="card_text">
-                  <h4 className="date">Janvier 12, 2019</h4>
-                  <h3>Lorem Ipsum is dolar sit</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur. Duis rhoncus eget
-                    sed consectetur erat lobortis viverra. Accumsan sit eget leo
-                    amet elementum vestibulum nisl. Accumsan id massa vel eu
-                    auctor massa
-                  </p>
-                  <Link to="" className="blog_link">
-                    En savoir plus
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
+      
+      
       <section className="sp_service">
         <div className="container">
           <div className="row">
