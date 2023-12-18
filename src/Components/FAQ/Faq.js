@@ -12,10 +12,7 @@ const Faq = () => {
       question: "Quels types d'artistes travaillez-vous et quelle est votre expertise dans le domaine artistique ?",
       answer: "Nous travaillons avec une diversité d'artistes, allant des émergents aux établis. Notre équipe possède une expertise approfondie dans le domaine artistique, ce qui nous permet de comprendre et de promouvoir chaque vision artistique de manière authentique.",
     },
-    {
-      question: "What is React?",
-      answer: "React is a JavaScript library for building user interfaces.",
-    },
+    
     {
       question: "Comment fonctionne le processus de collaboration avec PaintConnect ?",
       answer:
