@@ -276,12 +276,12 @@ section {
 .about_paintConnect .grid_2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  align-items: center;
+  /* align-items: center; */
 }
 
 .about_paintConnect .text_content {
   max-width: 660px;
-  padding: 0 50px;
+  padding: 40px 50px;
 }
 
 .about_paintConnect .text_content.left_text_content {
@@ -423,20 +423,20 @@ section {
   transition: all 0.5s ease-in;
 }
 
-.art_collection .section_title{
-max-width: 100%;
+.art_collection .section_title {
+  max-width: 100%;
 }
 
-.art_collection .section_title h2{
-color: var(--title-color);
-text-align: left;
+.art_collection .section_title h2 {
+  color: var(--title-color);
+  text-align: left;
 }
 
-.art_collection .container{
+.art_collection .container {
   position: relative;
 }
 
-.art_collection .swiper_btn{
+.art_collection .swiper_btn {
   display: flex;
   gap: 20px;
   position: absolute;
@@ -445,15 +445,15 @@ text-align: left;
 }
 
 .art_collection .swiper_btn .prev_button button,
-.art_collection .swiper_btn .next_button button{
+.art_collection .swiper_btn .next_button button {
   border: none !important;
   width: 50px;
   height: 50px;
-  background: #AAA186;
+  background: #aaa186;
   border-radius: 100px;
 }
 
-.art_collection .swiper_btn .icons{
+.art_collection .swiper_btn .icons {
   font-size: 30px;
 }
 
@@ -717,13 +717,28 @@ text-align: left;
 .sp_service p {
   color: var(--white-color);
 }
+.readMoreButton,
+.readLessButton {
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.readMore {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
 
 /*=========================== 
 Responsive Css 
 ===========================*/
 
 @media (max-width: 991px) {
-  .banner_text h1{
+  .banner_text h1 {
     font-size: 5.5vw;
   }
 
@@ -780,7 +795,7 @@ Responsive Css
 }
 
 @media (max-width: 768px) {
-  .banner_text h1{
+  .banner_text h1 {
     font-size: 36px;
   }
 
@@ -800,11 +815,11 @@ Responsive Css
     object-fit: cover;
   }
 
-  .art_collection .section_title h2{
+  .art_collection .section_title h2 {
     text-align: center;
   }
 
-  .art_collection .swiper_btn{
+  .art_collection .swiper_btn {
     display: none;
   }
 }

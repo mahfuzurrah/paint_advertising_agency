@@ -1,107 +1,120 @@
 .navbar {
-    position: fixed !important;
-    top: 0;
-    width: 100%;
-    border-bottom: 1px solid #ffffff36;
-    background: transparent;
-    height: 80px;
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid #ffffff36;
+  background: transparent;
+  padding: 0 !important;
 }
 
 .navbar .logo a h3 {
-    color: var(--white-color);
+  color: var(--white-color);
 }
 
 .navbar .nav .nav_menu {
-    display: flex;
-    align-items: center;
-    gap: 35px;
+  display: flex;
+  align-items: center;
+  gap: 35px;
 }
 
 .navbar .nav .nav_menu li .nav-link {
-    padding: 0;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: var(--white-color);
-    cursor: pointer;
+  padding: 0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--white-color);
+  cursor: pointer;
+  height: 70px;
 }
 
 .navbar .btn {
-    background: var(--white-color);
-    color: #000000;
+  background: var(--white-color);
+  color: #000000;
 }
 
 .navbar .nav .nav_menu .sub-menu {
-    background: var(--white-color);
-    padding: 20px;
-    position: absolute;
-    top: 82px;
-    width: 250px;
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  background: var(--white-color);
+  padding: 20px;
+  position: absolute;
+  top: 70px;
+  width: 250px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.navbar .nav .nav_menu .sub-menu .sub-menu-item {
+  margin-top: 15px;
+}
+
+.navbar .nav .nav_menu .sub-menu .sub-menu-item:first-child {
+  margin-top: 0;
+}
+
+.navbar .sub_menu_list:hover .sub-menu {
+  display: block !important;
 }
 
 .navbar .toogle_btn {
-    border: none;
-    background: transparent;
-    font-size: 30px;
-    color: var(--white-color);
-    display: none;
+  border: none;
+  background: transparent;
+  font-size: 30px;
+  color: var(--white-color);
+  display: none;
 }
 
 .navbar .toogle_btn .icons {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .navbar.scrolled {
-    background: #000;
-    z-index: 999;
+  background: #000;
+  z-index: 999;
 }
 
 @media screen and (max-width: 991px) {
-    .navbar .nav {
-        position: absolute;
-        top: 80px;
-        padding: 30px;
-        left: -100%;
-        width: 250px;
-        overflow: hidden;
-        background: #000;
-        height: 100vh;
-        transition: all 0.5s ease-in-out;
-    }
+  .navbar .nav {
+    position: absolute;
+    top: 80px;
+    padding: 30px;
+    left: -100%;
+    width: 250px;
+    overflow: hidden;
+    background: #000;
+    height: 100vh;
+    transition: all 0.5s ease-in-out;
+  }
 
-    .navbar .nav.open {
-        left: 0;
-        z-index: 99;
-    }
+  .navbar .nav.open {
+    left: 0;
+    z-index: 99;
+  }
 
-    .navbar .nav .nav_menu {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-    }
+  .navbar .nav .nav_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
 
-    .navbar .nav .nav_menu li {
-        width: 100%;
-    }
+  .navbar .nav .nav_menu li {
+    width: 100%;
+  }
 
-    .navbar .nav .nav_menu li .nav-link {
-        width: 100%;
-        justify-content: space-between;
-    }
+  .navbar .nav .nav_menu li .nav-link {
+    width: 100%;
+    justify-content: space-between;
+  }
 
-    .navbar .nav .nav_menu .sub-menu {
-        position: relative;
-        top: 20px;
-        width: 100%;
-    }
+  .navbar .nav .nav_menu .sub-menu {
+    position: relative;
+    top: 20px;
+    width: 100%;
+  }
 
-    .navbar .toogle_btn {
-        display: block;
-    }
+  .navbar .toogle_btn {
+    display: block;
+  }
 }

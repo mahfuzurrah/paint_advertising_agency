@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // import { Link } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -10,6 +10,8 @@ import VideoPlayer from "../Components/VideoPlayer/VideoPlayer";
 // import blog1 from "../Components/assets/blog1.png";
 // import blog2 from "../Components/assets/blog2.png";
 // import blog3 from "../Components/assets/blog3.png";
+import ArtCollectionSlider from "../Components/Slider/ArtCollectionSlider";
+import TestimonialSlider from "../Components/Slider/TestimonialSlider";
 import HomeCarousel1 from "../Components/assets/carouselImg/HomeCarousel1.png";
 import HomeCarousel2 from "../Components/assets/carouselImg/HomeCarousel2.png";
 import HomeCarousel3 from "../Components/assets/carouselImg/HomeCarousel3.png";
@@ -19,10 +21,18 @@ import serviceIcon_2 from "../Components/assets/icons/loveShake.png";
 import serviceIcon_3 from "../Components/assets/icons/userInfo.png";
 import pourquoiChoisirImg from "../Components/assets/pourquoiChoisir.jpeg";
 import sp_service from "../Components/assets/sp_service.png";
-import TestimonialSlider from "../Components/Slider/TestimonialSlider";
-import ArtCollectionSlider from "../Components/Slider/ArtCollectionSlider";
 
 function Home() {
+  const [isActive, setIsActive] = useState(true);
+  const [isActive2, setIsActive2] = useState(true);
+
+  const toggleClass = () => {
+    setIsActive(!isActive);
+  };
+  const toggleClass2 = () => {
+    setIsActive2(!isActive2);
+  };
+
   return (
     <>
       <section className="banner">
@@ -33,7 +43,7 @@ function Home() {
               La Régie Publicitaire & Agence spécialisée dans l'art de la
               peinture
             </h1>
-             {/* 
+            {/* 
             <div className="btn_area">
               <button className="btn">Commencer</button>
               <button className="btn_sec">Nos services</button>
@@ -53,13 +63,30 @@ function Home() {
             <div className="text_content">
               <p className="ex-font">Bienvenue sur PaintConnect</p>
               <h2>
-              PaintConnect est l'agence de publicité spécialisée dans la peinture.
+                PaintConnect est l'agence de publicité spécialisée dans la
+                peinture.
               </h2>
-              <p className="mt-3">
-              Votre allié infaillible pour propulser votre présence dans le monde captivant de la peinture. En tant qu'agence de publicité et de communication passionnée, notre mission est de magnifier la beauté et l'expression créative de l'art de la peinture.
-              </p>
-              <p className="mt-3">
-              Notre étroite collaboration avec des artistes de renom, des marques de peinture prestigieuses, des fournisseurs d'art de premier plan et des publications spécialisées influentes renforce notre expertise en matière de stratégies de communication globales. ..... En savoir plus
+
+              <div className={isActive ? "readMore" : "readLess"}>
+                <p className="mt-3">
+                  Votre allié infaillible pour propulser votre présence dans le
+                  monde captivant de la peinture. En tant qu'agence de publicité
+                  et de communication passionnée, notre mission est de magnifier
+                  la beauté et l'expression créative de l'art de la peinture.
+                </p>
+                <p>
+                  Notre étroite collaboration avec des artistes de renom, des
+                  marques de peinture prestigieuses, des fournisseurs d'art de
+                  premier plan et des publications spécialisées influentes
+                  renforce notre expertise en matière de stratégies de
+                  communication globales.
+                </p>
+              </div>
+              <p
+                onClick={toggleClass}
+                className={isActive ? "readMoreButton" : "readLessButton"}
+              >
+                {isActive ? "En savoir plus" : "IEn savoir moins"}
               </p>
             </div>
           </div>
@@ -71,17 +98,30 @@ function Home() {
                 <span style={{ color: "#AAA186" }}>Pourquoi choisir</span> une
                 agence de publicité spécialisée dans le domaine de la peinture ?
               </h2>
-              <p className="mt-3">
-              Forte d'une vaste expérience dans le monde de la peinture, notre agence bénéficie d'une expertise reconnue dans les supports artistiques spécialisés. Nous travaillons en étroite collaboration avec des acteurs majeurs du monde de l'art, vous proposant ainsi une stratégie de communication complète adaptée à vos besoins.
-              </p>
-              <p className="mt-3">
-              Faire appel à notre agence PaintConnect Advertising, c'est
-              l'assurance de vous faire bénéficier d'une équipe de
-              professionnels expérimentés et dédiés à la réussite de vos
-              campagnes publicitaires. Nous nous engageons à assurer une
-              visibilité optimale à vos produits ou services artistiques, en
-              vous fournissant une plateforme pour mettre en valeur votre
-              vision créative et capturer l’essence de votre travail.
+              <div className={isActive2 ? "readMore" : "readLess"}>
+                <p className="mt-3">
+                  Forte d'une vaste expérience dans le monde de la peinture,
+                  notre agence bénéficie d'une expertise reconnue dans les
+                  supports artistiques spécialisés. Nous travaillons en étroite
+                  collaboration avec des acteurs majeurs du monde de l'art, vous
+                  proposant ainsi une stratégie de communication complète
+                  adaptée à vos besoins.
+                </p>
+                <p className="mt-3">
+                  Faire appel à notre agence PaintConnect Advertising, c'est
+                  l'assurance de vous faire bénéficier d'une équipe de
+                  professionnels expérimentés et dédiés à la réussite de vos
+                  campagnes publicitaires. Nous nous engageons à assurer une
+                  visibilité optimale à vos produits ou services artistiques, en
+                  vous fournissant une plateforme pour mettre en valeur votre
+                  vision créative et capturer l’essence de votre travail.
+                </p>
+              </div>
+              <p
+                onClick={toggleClass2}
+                className={isActive2 ? "readMoreButton" : "readLessButton"}
+              >
+                {isActive2 ? "En savoir plus" : "IEn savoir moins"}
               </p>
             </div>
           </div>
@@ -166,7 +206,10 @@ function Home() {
                 <div className="card-body">
                   <h3>Renforcez votre image de marque</h3>
                   <p className="mt-2">
-                  Les consommateurs sont de plus en plus réceptifs aux valeurs promues par les entreprises. Une communication efficace vous donne les moyens d’augmenter votre rayonnement et de vous différencier positivement de vos concurrents.
+                    Les consommateurs sont de plus en plus réceptifs aux valeurs
+                    promues par les entreprises. Une communication efficace vous
+                    donne les moyens d’augmenter votre rayonnement et de vous
+                    différencier positivement de vos concurrents.
                   </p>
                 </div>
               </div>
@@ -177,7 +220,9 @@ function Home() {
                 <div className="card-body">
                   <h3>Attirez et fidélisez les talents</h3>
                   <p className="mt-2">
-                  Les employés apprécient les engagements de leur entreprise. Vous rehaussez votre attractivité auprès des talents actuels et futurs.
+                    Les employés apprécient les engagements de leur entreprise.
+                    Vous rehaussez votre attractivité auprès des talents actuels
+                    et futurs.
                   </p>
                 </div>
               </div>
@@ -188,7 +233,8 @@ function Home() {
                 <div className="card-body">
                   <h3>Promouvez l'innovation</h3>
                   <p className="mt-2">
-                  En infusant votre stratégie de communication, vous stimulez l’émergence d’idées neuves et de solutions innovantes.
+                    En infusant votre stratégie de communication, vous stimulez
+                    l’émergence d’idées neuves et de solutions innovantes.
                   </p>
                 </div>
               </div>
@@ -201,7 +247,7 @@ function Home() {
           <div className="section_title mb-5">
             <h2>CATÉGORIE COLLECTION D'ART</h2>
           </div>
-          <ArtCollectionSlider/>
+          <ArtCollectionSlider />
         </div>
       </section>
       <section className="testimonials">
@@ -210,7 +256,7 @@ function Home() {
             <p>testimonials</p>
             <h2>Ce qu'ils disent de notre travail</h2>
           </div>
-          <TestimonialSlider/>
+          <TestimonialSlider />
         </div>
       </section>
       <section className="faq">
@@ -236,8 +282,6 @@ function Home() {
         </div>
       </section>
 
-      
-      
       <section className="sp_service">
         <div className="container">
           <div className="row">

@@ -48,12 +48,12 @@ function Navbar() {
   ];
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
+  // const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  const toggleSubMenu = () => {
-    setIsSubMenuOpen(!isSubMenuOpen);
-  };
+  // const toggleSubMenu = () => {
+  //   setIsSubMenuOpen(!isSubMenuOpen);
+  // };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -86,25 +86,20 @@ function Navbar() {
         <div className={`nav ${isMenuOpen ? "open" : ""}`}>
           <ul className="nav_menu">
             {menuItem.map((menuItem) => (
-              <li className="nav-item" key={menuItem.name}>
+              <li className="nav-item sub_menu_list" key={menuItem.name}>
                 {menuItem.subMenu ? (
                   <div
-                    className={`nav-link ${isSubMenuOpen ? "open" : ""}`}
-                    onClick={toggleSubMenu}
+                    className="nav-link"
                   >
                     {menuItem.name}
-                    {isSubMenuOpen ? (
-                      <BiChevronUp className="icons" />
-                    ) : (
-                      <BiChevronDown className="icons" />
-                    )}
+                    <BiChevronUp className="icons" />
                   </div>
                 ) : (
                   <Link to={menuItem.url} className="nav-link">
                     {menuItem.name}
                   </Link>
                 )}
-                {menuItem.subMenu && isSubMenuOpen && (
+                {menuItem.subMenu && (
                   <ul className="sub-menu">
                     {menuItem.subMenu.map((subItem) => (
                       <li className="sub-menu-item" key={subItem.name}>
